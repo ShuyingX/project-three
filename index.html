@@ -2,14 +2,1051 @@
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
+    <link rel="stylesheet" href="./css/main.css" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="stylesheet" href="./css/reset.css" />
-    <link rel="stylesheet" href="./css/main.css" />
-    <script src="./js/main.js" defer></script>
-    <title>Document</title>
+    <link
+      href="https://fonts.googleapis.com/css2?family=Crete+Round&family=Oxygen+Mono&display=swap"
+      rel="stylesheet"
+    />
+    <title>Chess Guide for Beginners</title>
   </head>
   <body>
-    Hello, world!
+    <!-- main element is fixed to the screen -->
+    <div class="slides">
+      <div id="slide-1">
+        <div id="table">
+          <div id="centeralign">
+            <h1 style="font-size: 9vw">Chess Guide for Beginners</h1>
+            <p>Lilly Xu, MEJO 187, Fall 2021</p>
+          </div>
+        </div>
+      </div>
+
+      <div id="slide-2">
+        <div id="setup">
+          <div class="description">
+            <h1 style="font-size: 5vw">Setting up the chess board</h1>
+            <p>
+              There is no place more important to begin than with the pieces. We
+              are going to learn about all of the pieces—specifically, where
+              they are placed when a game begins, how they move, and how they
+              are valued.
+            </p>
+          </div>
+        </div>
+        <div id="image">
+          <img src="./images/1.png" alt="chess board" />
+        </div>
+      </div>
+
+      <div id="slide-3">
+        <div id="setup1">
+          <div class="description">
+            <h1>Your turn:</h1>
+            <h2>Move highlighted chess piece according to the instruction</h2>
+            <h3>Pawns</h3>
+            <p>
+              Pawns move vertically forward one square, with the option to move
+              two squares if they have not yet moved. <br />
+            </p>
+            <p>
+              Pawns are the only piece to capture different to how they move.
+              The pawns capture one square diagonally in a forward direction.
+              Pawns are unable to move backward on captures or moves. Upon
+              reaching the other side of the board a pawn promotes into any
+              other piece, except for a king.
+            </p>
+          </div>
+        </div>
+        <div class="board">
+          <div class="white">
+            <img src="./images/white_rook.png" />
+          </div>
+          <div class="black">
+            <img src="./images/white_knight.png" />
+          </div>
+          <div class="white">
+            <img src="./images/white_bishop.png" />
+          </div>
+          <div class="black">
+            <img src="./images/white_queen.png" />
+          </div>
+          <div class="white">
+            <img src="./images/white_king.png" />
+          </div>
+          <div class="black">
+            <img src="./images/white_bishop.png" />
+          </div>
+          <div class="white">
+            <img src="./images/white_knight.png" />
+          </div>
+          <div class="black">
+            <img src="./images/white_rook.png" />
+          </div>
+          <div class="black">
+            <img src="./images/white_pawn.png" />
+          </div>
+          <div class="white">
+            <img src="./images/white_pawn.png" />
+          </div>
+          <div class="black">
+            <img src="./images/white_pawn.png" />
+          </div>
+          <div class="white">
+            <img src="./images/white_pawn.png" />
+          </div>
+          <div class="black">
+            <img src="./images/white_pawn.png" />
+          </div>
+          <div class="white">
+            <img src="./images/white_pawn.png" />
+          </div>
+          <div class="black">
+            <img src="./images/white_pawn.png" />
+          </div>
+          <div class="white">
+            <img src="./images/white_pawn.png" />
+          </div>
+          <div class="white"></div>
+          <div class="black"></div>
+          <div class="white"></div>
+          <div class="black"></div>
+          <div class="white"></div>
+          <div class="black"></div>
+          <div class="white"></div>
+          <div class="black"></div>
+          <div class="black"></div>
+          <div class="white"></div>
+          <div class="black"></div>
+          <div class="white"></div>
+          <div class="black"></div>
+          <div class="white"></div>
+          <div class="black"></div>
+          <div class="white"></div>
+          <div class="white"></div>
+          <div class="black"></div>
+          <div class="white"></div>
+          <div class="black"></div>
+          <div class="white"></div>
+          <div
+            class="black"
+            id="div1"
+            ondrop="drop(event)"
+            ondragover="allowDrop(event)"
+          ></div>
+          <div class="white"></div>
+          <div class="black"></div>
+          <div class="black"></div>
+          <div class="white"></div>
+          <div class="black"></div>
+          <div class="white"></div>
+          <div class="black"></div>
+          <div
+            class="white"
+            id="div1"
+            ondrop="drop(event)"
+            ondragover="allowDrop(event)"
+          ></div>
+          <div class="black"></div>
+          <div class="white"></div>
+          <div class="white">
+            <img src="./images/black_pawn.png" />
+          </div>
+          <div class="black">
+            <img src="./images/black_pawn.png" />
+          </div>
+          <div class="white">
+            <img src="./images/black_pawn.png" />
+          </div>
+          <div class="black">
+            <img src="./images/black_pawn.png" />
+          </div>
+          <div class="white">
+            <img src="./images/black_pawn.png" />
+          </div>
+          <div class="selected">
+            <img
+              id="pawn"
+              src="./images/black_pawn.png"
+              draggable="true"
+              ondragstart="drag(event)"
+            />
+          </div>
+          <div class="white">
+            <img src="./images/black_pawn.png" />
+          </div>
+          <div class="black">
+            <img src="./images/black_pawn.png" />
+          </div>
+          <div class="black">
+            <img src="./images/black_rook.png" />
+          </div>
+          <div class="white">
+            <img src="./images/black_knight.png" />
+          </div>
+          <div class="black">
+            <img src="./images/black_bishop.png" />
+          </div>
+          <div class="white">
+            <img src="./images/black_queen.png" />
+          </div>
+          <div class="black">
+            <img src="./images/black_king.png" />
+          </div>
+          <div class="white">
+            <img src="./images/black_bishop.png" />
+          </div>
+          <div class="black">
+            <img src="./images/black_knight.png" />
+          </div>
+          <div class="white">
+            <img src="./images/black_rook.png" />
+          </div>
+        </div>
+      </div>
+
+      <div id="slide-4">
+        <div id="setup2">
+          <div class="description">
+            <h3>Rooks</h3>
+            <p>Horizontally or vertically any number of squares.</p>
+            <p>
+              They are unable to jump over pieces. Rooks move when the king
+              castles.
+            </p>
+          </div>
+        </div>
+        <div class="board">
+          <div class="white">
+            <img src="./images/white_rook.png" />
+          </div>
+          <div class="black">
+            <img src="./images/white_knight.png" />
+          </div>
+          <div class="white">
+            <img src="./images/white_bishop.png" />
+          </div>
+          <div class="black">
+            <img src="./images/white_queen.png" />
+          </div>
+          <div class="white">
+            <img src="./images/white_king.png" />
+          </div>
+          <div class="black">
+            <img src="./images/white_bishop.png" />
+          </div>
+          <div class="white"></div>
+          <div class="black">
+            <img src="./images/white_rook.png" />
+          </div>
+          <div
+            class="black"
+            id="div2"
+            ondrop="drop(event)"
+            ondragover="allowDrop(event)"
+          >
+            <img src="./images/white_pawn.png" />
+          </div>
+          <div class="white"></div>
+          <div class="black">
+            <img src="./images/white_pawn.png" />
+          </div>
+          <div class="white">
+            <img src="./images/white_pawn.png" />
+          </div>
+          <div class="black">
+            <img src="./images/white_pawn.png" />
+          </div>
+          <div class="white"></div>
+          <div class="black">
+            <img src="./images/white_pawn.png" />
+          </div>
+          <div class="white">
+            <img src="./images/white_pawn.png" />
+          </div>
+          <div
+            class="white"
+            id="div2"
+            ondrop="drop(event)"
+            ondragover="allowDrop(event)"
+          ></div>
+          <div class="black"></div>
+          <div class="white"></div>
+          <div class="black"></div>
+          <div class="white"></div>
+          <div class="black">
+            <img src="./images/white_knight.png" />
+          </div>
+          <div class="white"></div>
+          <div class="black"></div>
+          <div
+            class="black"
+            id="div2"
+            ondrop="drop(event)"
+            ondragover="allowDrop(event)"
+          ></div>
+          <div class="white"></div>
+          <div class="black"></div>
+          <div class="white"></div>
+          <div class="black"></div>
+          <div class="white">
+            <img src="./images/white_pawn.png" />
+          </div>
+          <div class="black"></div>
+          <div class="white"></div>
+          <div
+            class="white"
+            id="div2"
+            ondrop="drop(event)"
+            ondragover="allowDrop(event)"
+          ></div>
+          <div class="black">
+            <img src="./images/black_pawn.png" />
+          </div>
+          <div class="white"></div>
+          <div class="black"></div>
+          <div class="white"></div>
+          <div class="black"></div>
+          <div class="white"></div>
+          <div class="black"></div>
+          <div class="selected">
+            <img
+              id="rook"
+              src="./images/black_rook.png"
+              draggable="true"
+              ondragstart="drag(event)"
+            />
+          </div>
+          <div
+            class="white"
+            id="div2"
+            ondrop="drop(event)"
+            ondragover="allowDrop(event)"
+          ></div>
+          <div
+            class="black"
+            id="div2"
+            ondrop="drop(event)"
+            ondragover="allowDrop(event)"
+          ></div>
+          <div
+            class="white"
+            id="div2"
+            ondrop="drop(event)"
+            ondragover="allowDrop(event)"
+          ></div>
+          <div
+            class="black"
+            id="div2"
+            ondrop="drop(event)"
+            ondragover="allowDrop(event)"
+          ></div>
+          <div
+            class="white"
+            id="div2"
+            ondrop="drop(event)"
+            ondragover="allowDrop(event)"
+          ></div>
+          <div
+            class="black"
+            id="div2"
+            ondrop="drop(event)"
+            ondragover="allowDrop(event)"
+          ></div>
+          <div
+            class="white"
+            id="div2"
+            ondrop="drop(event)"
+            ondragover="allowDrop(event)"
+          ></div>
+          <div
+            class="white"
+            id="div2"
+            ondrop="drop(event)"
+            ondragover="allowDrop(event)"
+          ></div>
+          <div class="black">
+            <img src="./images/black_pawn.png" />
+          </div>
+          <div class="white">
+            <img src="./images/black_pawn.png" />
+          </div>
+          <div class="black">
+            <img src="./images/black_pawn.png" />
+          </div>
+          <div class="white">
+            <img src="./images/black_pawn.png" />
+          </div>
+          <div class="black">
+            <img src="./images/black_pawn.png" />
+          </div>
+          <div class="white">
+            <img src="./images/black_pawn.png" />
+          </div>
+          <div class="black">
+            <img src="./images/black_pawn.png" />
+          </div>
+          <div
+            class="black"
+            id="div2"
+            ondrop="drop(event)"
+            ondragover="allowDrop(event)"
+          ></div>
+          <div class="white">
+            <img src="./images/black_knight.png" />
+          </div>
+          <div class="black">
+            <img src="./images/black_bishop.png" />
+          </div>
+          <div class="white">
+            <img src="./images/black_queen.png" />
+          </div>
+          <div class="black">
+            <img src="./images/black_king.png" />
+          </div>
+          <div class="white">
+            <img src="./images/black_bishop.png" />
+          </div>
+          <div class="black">
+            <img src="./images/black_knight.png" />
+          </div>
+          <div class="white">
+            <img src="./images/black_rook.png" />
+          </div>
+        </div>
+      </div>
+
+      <div id="slide-5">
+        <div id="setup3">
+          <div class="description">
+            <h3>Knights</h3>
+            <p>
+              Knights move in an ‘L’ shape’: two squares in a horizontal or
+              vertical direction, then move one square horizontally or
+              vertically. 
+              <p>They are the only piece able to jump over other
+              pieces.</p> 
+            </p>
+          </div>
+        </div>
+        <div class="board">
+          <div class="white">
+            <img src="./images/white_rook.png" />
+          </div>
+          <div class="black">
+            <img src="./images/white_knight.png" />
+          </div>
+          <div class="white">
+            <img src="./images/white_bishop.png" />
+          </div>
+          <div class="black">
+            <img src="./images/white_queen.png" />
+          </div>
+          <div class="white">
+            <img src="./images/white_king.png" />
+          </div>
+          <div class="black">
+            <img src="./images/white_bishop.png" />
+          </div>
+          <div class="white">
+            <img src="./images/white_knight.png" />
+          </div>
+          <div class="black">
+            <img src="./images/white_rook.png" />
+          </div>
+          <div class="black">
+            <img src="./images/white_pawn.png" />
+          </div>
+          <div class="white">
+            <img src="./images/white_pawn.png" />
+          </div>
+          <div class="black">
+            <img src="./images/white_pawn.png" />
+          </div>
+          <div class="white">
+            <img src="./images/white_pawn.png" />
+          </div>
+          <div class="black">
+            <img src="./images/white_pawn.png" />
+          </div>
+          <div class="white">
+            <img src="./images/white_pawn.png" />
+          </div>
+          <div class="black">
+            <img src="./images/white_pawn.png" />
+          </div>
+          <div class="white">
+            <img src="./images/white_pawn.png" />
+          </div>
+          <div class="white"></div>
+          <div class="black"></div>
+          <div class="white"></div>
+          <div class="black"></div>
+          <div class="white"></div>
+          <div class="black"></div>
+          <div class="white"></div>
+          <div class="black"></div>
+          <div class="black"></div>
+          <div class="white"></div>
+          <div class="black"></div>
+          <div class="white"></div>
+          <div class="black"></div>
+          <div class="white"></div>
+          <div class="black"></div>
+          <div class="white"></div>
+          <div class="white"></div>
+          <div class="black"></div>
+          <div class="white"></div>
+          <div class="black"></div>
+          <div class="white"></div>
+          <div class="black"></div>
+          <div class="white"></div>
+          <div class="black"></div>
+          <div class="black" id="div3"
+          ondrop="drop(event)"
+          ondragover="allowDrop(event)"></div>
+          <div class="white"></div>
+          <div class="black" id="div3"
+          ondrop="drop(event)"
+          ondragover="allowDrop(event)"></div>
+          <div class="white"></div>
+          <div class="black"></div>
+          <div class="white"></div>
+          <div class="black"></div>
+          <div class="white"></div>
+          <div class="white">
+            <img src="./images/black_pawn.png" />
+          </div>
+          <div class="black">
+            <img src="./images/black_pawn.png" />
+          </div>
+          <div class="white">
+            <img src="./images/black_pawn.png" />
+          </div>
+          <div class="black">
+            <img src="./images/black_pawn.png" />
+          </div>
+          <div class="white">
+            <img src="./images/black_pawn.png" />
+          </div>
+          <div class="black">
+            <img src="./images/black_pawn.png" />
+          </div>
+          <div class="white">
+            <img src="./images/black_pawn.png" />
+          </div>
+          <div class="black">
+            <img src="./images/black_pawn.png" />
+          </div>
+          <div class="black">
+            <img src="./images/black_rook.png" />
+          </div>
+          <div class="selected">
+            <img
+              id="knight"
+              src="./images/black_knight.png"
+              draggable="true"
+              ondragstart="drag(event)"
+            />
+          </div>
+          <div class="black">
+            <img src="./images/black_bishop.png" />
+          </div>
+          <div class="white">
+            <img src="./images/black_queen.png" />
+          </div>
+          <div class="black">
+            <img src="./images/black_king.png" />
+          </div>
+          <div class="white">
+            <img src="./images/black_bishop.png" />
+          </div>
+          <div class="black">
+            <img src="./images/black_knight.png" />
+          </div>
+          <div class="white">
+            <img src="./images/black_rook.png" />
+          </div>
+        </div>
+      </div>
+
+      <div id="slide-6">
+        <div id="setup4">
+          <div class="description">
+            <h3>Bishop</h3>
+            <p>
+              Bishops move diagonally any number of squares. 
+              <p>They are unable to jump over pieces.</p> 
+            </p>
+          </div>
+        </div>
+        <div class="board">
+          <div class="white">
+            <img src="./images/white_rook.png" />
+          </div>
+          <div class="black">
+            <img src="./images/white_knight.png" />
+          </div>
+          <div class="white">
+            <img src="./images/white_bishop.png" />
+          </div>
+          <div class="black">
+            <img src="./images/white_queen.png" />
+          </div>
+          <div class="white">
+            <img src="./images/white_king.png" />
+          </div>
+          <div class="black">
+            <img src="./images/white_bishop.png" />
+          </div>
+          <div class="white"></div>
+          <div class="black">
+            <img src="./images/white_rook.png" />
+          </div>
+          <div class="black">
+            <img src="./images/white_pawn.png" />
+          </div>
+          <div class="white">
+            <img src="./images/white_pawn.png" />
+          </div>
+          <div class="black">
+            <img src="./images/white_pawn.png" />
+          </div>
+          <div class="white">
+            <img src="./images/white_pawn.png" />
+          </div>
+          <div class="black">
+            <img src="./images/white_pawn.png" />
+          </div>
+          <div class="white">
+            <img src="./images/white_pawn.png" />
+          </div>
+          <div class="black">
+            <img src="./images/white_pawn.png" />
+          </div>
+          <div class="white">
+            <img src="./images/white_pawn.png" />
+          </div>
+          <div class="white"></div>
+          <div class="black"></div>
+          <div class="white"></div>
+          <div class="black"></div>
+          <div class="white"></div>
+          <div class="black"></div>
+          <div class="white"></div>
+          <div class="black" id="div4"
+          ondrop="drop(event)"
+          ondragover="allowDrop(event)">
+          <img src="./images/white_knight.png" /></div>
+          <div class="black"></div>
+          <div class="white"></div>
+          <div class="black"></div>
+          <div class="white"></div>
+          <div class="black"></div>
+          <div class="white"></div>
+          <div class="black" id="div4"
+          ondrop="drop(event)"
+          ondragover="allowDrop(event)"></div>
+          <div class="white"></div>
+          <div class="white"></div>
+          <div class="black"></div>
+          <div class="white"></div>
+          <div class="black"></div>
+          <div class="white"></div>
+          <div class="black" id="div4"
+          ondrop="drop(event)"
+          ondragover="allowDrop(event)"></div>
+          <div class="white"></div>
+          <div class="black"></div>
+          <div class="black"></div>
+          <div class="white"></div>
+          <div class="black"></div>
+          <div class="white">
+            <img src="./images/black_pawn.png" />
+          </div>
+          <div class="black" id="div4"
+          ondrop="drop(event)"
+          ondragover="allowDrop(event)"></div>
+          <div class="white"></div>
+          <div class="black"></div>
+          <div class="white"></div>
+          <div class="white">
+            <img src="./images/black_pawn.png" />
+          </div>
+          <div class="black">
+            <img src="./images/black_pawn.png" />
+          </div>
+          <div class="white">
+            <img src="./images/black_pawn.png" />
+          </div>
+          <div class="black" id="div4"
+          ondrop="drop(event)"
+          ondragover="allowDrop(event)"></div>
+          <div class="white">
+            <img src="./images/black_pawn.png" />
+          </div>
+          <div class="black">
+            <img src="./images/black_pawn.png" />
+          </div>
+          <div class="white">
+            <img src="./images/black_pawn.png" />
+          </div>
+          <div class="black">
+            <img src="./images/black_pawn.png" />
+          </div>
+          <div class="black">
+            <img src="./images/black_rook.png" />
+          </div>
+          <div class="white">
+            <img src="./images/black_knight.png" />
+          </div>
+          <div class="selected">
+            <img
+              id="bishop"
+              src="./images/black_bishop.png"
+              draggable="true"
+              ondragstart="drag(event)"
+            />
+          </div>
+          <div class="white">
+            <img src="./images/black_queen.png" />
+          </div>
+          <div class="black">
+            <img src="./images/black_king.png" />
+          </div>
+          <div class="white">
+            <img src="./images/black_bishop.png" />
+          </div>
+          <div class="black">
+            <img src="./images/black_knight.png" />
+          </div>
+          <div class="white">
+            <img src="./images/black_rook.png" />
+          </div>
+        </div>
+      </div>
+      
+      <div id="slide-7">
+        <div id="setup5">
+          <div class="description">
+            <h3>Queens</h3>
+            <p>
+              Queens move diagonally, horizontally, or vertically any number of squares.
+              <p>They are unable to jump over pieces.</p> 
+            </p>
+          </div>
+        </div>
+        <div class="board">
+          <div class="white">
+            <img src="./images/white_rook.png" />
+          </div>
+          <div class="black">
+            <img src="./images/white_knight.png" />
+          </div>
+          <div class="white">
+            <img src="./images/white_bishop.png" />
+          </div>
+          <div class="black">
+            <img src="./images/white_queen.png" />
+          </div>
+          <div class="white">
+            <img src="./images/white_king.png" />
+          </div>
+          <div class="black">
+            <img src="./images/white_bishop.png" />
+          </div>
+          <div class="white">
+            <img src="./images/white_knight.png" />
+          </div>
+          <div class="black">
+            <img src="./images/white_rook.png" />
+          </div>
+          <div class="black">
+            <img src="./images/white_pawn.png" />
+          </div>
+          <div class="white">
+            <img src="./images/white_pawn.png" />
+          </div>
+          <div class="black">
+            <img src="./images/white_pawn.png" />
+          </div>
+          <div class="white">
+            <img src="./images/white_pawn.png" />
+          </div>
+          <div class="black"></div>
+          <div class="white">
+            <img src="./images/white_pawn.png" />
+          </div>
+          <div class="black" id="div5"
+          ondrop="drop(event)"
+          ondragover="allowDrop(event)">
+            <img src="./images/white_pawn.png" />
+          </div>
+          <div class="white">
+            <img src="./images/white_pawn.png" />
+          </div>
+          <div class="white"></div>
+          <div class="black"></div>
+          <div class="white"></div>
+          <div class="black"></div>
+          <div class="white" id="div5"
+          ondrop="drop(event)"
+          ondragover="allowDrop(event)">
+            <img src="./images/white_pawn.png" />
+          </div>
+          <div class="black"></div>
+          <div class="white" id="div5"
+          ondrop="drop(event)"
+          ondragover="allowDrop(event)"></div>
+          <div class="black"></div>
+          <div class="black"></div>
+          <div class="white"></div>
+          <div class="black"></div>
+          <div class="white"></div>
+          <div class="black"></div>
+          <div class="white" id="div5"
+          ondrop="drop(event)"
+          ondragover="allowDrop(event)"></div>
+          <div class="black" id="div5"
+          ondrop="drop(event)"
+          ondragover="allowDrop(event)"></div>
+          <div class="white" id="div5"
+          ondrop="drop(event)"
+          ondragover="allowDrop(event)"></div>
+          <div class="white"></div>
+          <div class="black"></div>
+          <div class="white"></div>
+          <div class="black"></div>
+          <div class="white">
+            <img src="./images/black_pawn.png" />
+          </div>
+          <div class="black" id="div5"
+          ondrop="drop(event)"
+          ondragover="allowDrop(event)"></div>
+          <div class="selected">
+            <img
+              id="queen"
+              src="./images/black_queen.png"
+              draggable="true"
+              ondragstart="drag(event)"
+            />
+          </div>
+          <div class="black" id="div5"
+          ondrop="drop(event)"
+          ondragover="allowDrop(event)"></div>
+          <div class="black"></div>
+          <div class="white"></div>
+          <div class="black"></div>
+          <div class="white"></div>
+          <div class="black"></div>
+          <div class="white" id="div5"
+          ondrop="drop(event)"
+          ondragover="allowDrop(event)"></div>
+          <div class="black" id="div5"
+          ondrop="drop(event)"
+          ondragover="allowDrop(event)"></div>
+          <div class="white" id="div5"
+          ondrop="drop(event)"
+          ondragover="allowDrop(event)"></div>
+          <div class="white">
+            <img src="./images/black_pawn.png" />
+          </div>
+          <div class="black">
+            <img src="./images/black_pawn.png" />
+          </div>
+          <div class="white">
+            <img src="./images/black_pawn.png" />
+          </div>
+          <div class="black">
+            <img src="./images/black_pawn.png" />
+          </div>
+          <div class="white" id="div5"
+          ondrop="drop(event)"
+          ondragover="allowDrop(event)"></div>
+          <div class="black">
+            <img src="./images/black_pawn.png" />
+          </div>
+          <div class="white">
+            <img src="./images/black_pawn.png" />
+          </div>
+          <div class="black">
+            <img src="./images/black_pawn.png" />
+          </div>
+          <div class="black">
+            <img src="./images/black_rook.png" />
+          </div>
+          <div class="white">
+            <img src="./images/black_knight.png" />
+          </div>
+          <div class="black">
+            <img src="./images/black_bishop.png" />
+          </div>
+          <div class="white" id="div5"
+          ondrop="drop(event)"
+          ondragover="allowDrop(event)"></div>
+          <div class="black">
+            <img src="./images/black_king.png" />
+          </div>
+          <div class="white">
+            <img src="./images/black_bishop.png" />
+          </div>
+          <div class="black">
+            <img src="./images/black_knight.png" />
+          </div>
+          <div class="white">
+            <img src="./images/black_rook.png" />
+          </div>
+        </div>
+      </div>
+
+      <div id="slide-8">
+        <div id="setup6">
+          <div class="description">
+            <h3>Kings</h3>
+            <p>
+              Kings move one square in any direction, so long as that square is not attacked by an enemy piece. 
+              <p>Additionally, kings are able to make a special move, known as castling.</p> 
+            </p>
+          </div>
+        </div>
+        <div class="board">
+          <div class="white"></div>
+          <div class="black"></div>
+          <div class="white"></div>
+          <div class="black"></div>
+          <div class="white">
+            <img src="./images/white_king.png" />
+          </div>
+          <div class="black"></div>
+          <div class="white"></div>
+          <div class="black"></div>
+          <div class="black"></div>
+          <div class="white"></div>
+          <div class="black"></div>
+          <div class="white"></div>
+          <div class="black"></div>
+          <div class="white"></div>
+          <div class="black"></div>
+          <div class="white"></div>
+          <div class="white"></div>
+          <div class="black"></div>
+          <div class="white"></div>
+          <div class="black">
+            <img src="./images/white_bishop.png" />
+          </div>
+          <div class="white"></div>
+          <div class="black"></div>
+          <div class="white"></div>
+          <div class="black"></div>
+          <div class="black"></div>
+          <div class="white"></div>
+          <div class="black"></div>
+          <div class="white"></div>
+          <div class="black"></div>
+          <div class="white"></div>
+          <div class="black"></div>
+          <div class="white"></div>
+          <div class="white"></div>
+          <div class="black"></div>
+          <div class="white"></div>
+          <div class="black"></div>
+          <div class="white" id="div6"
+          ondrop="drop(event)"
+          ondragover="allowDrop(event)"></div>
+          <div class="black"></div>
+          <div class="white" id="div6"
+          ondrop="drop(event)"
+          ondragover="allowDrop(event)"></div>
+          <div class="black"></div>
+          <div class="black"></div>
+          <div class="white"></div>
+          <div class="black"></div>
+          <div class="white"></div>
+          <div class="black" id="div6"
+          ondrop="drop(event)"
+          ondragover="allowDrop(event)"></div>
+          <div class="selected">
+            <img
+              id="king"
+              src="./images/black_king.png"
+              draggable="true"
+              ondragstart="drag(event)"
+            />
+          </div>
+          <div class="black"></div>
+          <div class="white"></div>
+          <div class="white"></div>
+          <div class="black"></div>
+          <div class="white"></div>
+          <div class="black"></div>
+          <div class="white" id="div6"
+          ondrop="drop(event)"
+          ondragover="allowDrop(event)"></div>
+          <div class="black" id="div6"
+          ondrop="drop(event)"
+          ondragover="allowDrop(event)"></div>
+          <div class="white" id="div6"
+          ondrop="drop(event)"
+          ondragover="allowDrop(event)"></div>
+          <div class="black"></div>
+          <div class="black"></div>
+          <div class="white"></div>
+          <div class="black"></div>
+          <div class="white"></div>
+          <div class="black"></div>
+          <div class="white"></div>
+          <div class="black"></div>
+          <div class="white"></div>
+        </div>
+      </div>
+
+      <div id="slide-9">
+        <div id="text">
+          <div id="congrats">
+            <div id="setup7">
+              <h1>Congratulations</h1>
+            </div>
+          <p>You are ready for your first chess game!</p>
+        </div>
+      </div>
+      </div>
+
+    </div>
+
+    <div class="dots">
+      <div>
+        <a href="#slide-1">
+          <div class="dot" id="dot-1"></div>
+        </a>
+        <a href="#slide-2">
+          <div class="dot" id="dot-2"></div>
+        </a>
+        <a href="#slide-3">
+          <div class="dot" id="dot-3"></div>
+        </a>
+        <a href="#slide-4">
+          <div class="dot" id="dot-4"></div>
+        </a>
+        <a href="#slide-5">
+          <div class="dot" id="dot-5"></div>
+        </a>
+        <a href="#slide-6">
+          <div class="dot" id="dot-6"></div>
+        </a>
+        <a href="#slide-7">
+          <div class="dot" id="dot-7"></div>
+        </a>
+        <a href="#slide-8">
+          <div class="dot" id="dot-8"></div>
+        </a>
+        <a href="#slide-9">
+          <div class="dot" id="dot-9"></div>
+        </a>
+      </div>
+    </div>
+    <script src="js/main.js"></script>
   </body>
 </html>
+
+<!-- <a href="#slide-1">Start Over</a> -->
